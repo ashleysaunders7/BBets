@@ -102,10 +102,34 @@ For 40 Brownlow's, the average income is 270.16 dollars.
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
+```{r}
+mymin=numeric(1000)
+for (i in 1:1000) {
+  mymin[i]=BrLw(odds=4.389)
+}
+ smymin<- sort(mymin)
+ 
+ low=smymin[25]
+ high=smymin[975]
+ 
+ mean(smymin)
+ 
+  cat("low value (25th percentile):", low, "\n")
+ cat("high value (975th percentile):", high, "\n")
+ 
+ hist(smymin,
+      main="Histogram of Sorted Values",
+      xlab="Values",
+      ylab="Frequency",
+      col="skyblue",
+      border="blue",
+      breaks=100)
+```
+
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
-
+The odds are 4.389 to determine how Brownlow's earnings drop to zero. I discovered this number by trial and error, and it was the most reliable for me. By identifying our own low and high percentiles, we were able to obtain a 95% confidence interval. To ensure that we have a 95% confidence interval, we take the difference of 25 from 1000 and add 25 from the bottom to get 95% of 1000.
 
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
