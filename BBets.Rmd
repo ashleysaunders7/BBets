@@ -161,7 +161,7 @@ for (i in 1:1000) {
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
-The ideal class size is 28, however this does not mean that Brownlow's wages will be zero; in order to achieve this, we need a decimal number of pupils, which is not feasible. Whereas a class size of 28 is roughly -23 dollars, a class size of 29 is close to 29 dollars. In other words, a class size of 28 is ideal for Brownlow's earnings to approach zero. Trial and error was used to determine this. 
+The ideal class size is 28, however this does not mean that Brownlow's wages will be zero; in order to achieve this, we need a decimal number of pupils, which is not feasible. Whereas a class size of 28 is roughly -23 dollars, a class size of 29 is close to 29 dollars. In other words, a class size of 28 is ideal for Brownlow's earnings to approach zero. Trial and error was used to determine this. .
 
 
 
