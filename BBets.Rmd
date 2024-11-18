@@ -68,8 +68,30 @@ Brownlow would lose $282.57 in student revenue.
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 
+```{r}
+mymin=numeric(1000)
+for (i in 40:1000) {
+  mymin[i]=BrLw()
+}
+ smymin<- sort(mymin)
+ 
+ low=smymin[25]
+ high=smymin[975]
+ 
+ mean(smymin)
+ 
+  cat("low value (25th percentile):", low, "\n")
+ cat("high value (975th percentile):", high, "\n")
+ 
+ hist(smymin,
+      main="Histogram of Sorted Values",
+      xlab="Values",
+      ylab="Frequency",
+      col="skyblue",
+      border="blue",
+      breaks=1200)
+```
 
-# In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
 ## the standard deviation and a 95% confidence interval for their earnings?
 
